@@ -10,7 +10,12 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: "Krub", sans-serif;
@@ -23,6 +28,10 @@ body{
     color: var(--oscuro);
     
   }
+
+.titulo:after {
+  content: 'Esto va despeus del titulo';
+}
 
 .titulo span{
     font-size: 2rem;
@@ -71,6 +80,8 @@ body{
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 410px;
+  padding: 20px;  /* Se arreglo problema de sintaxis de 20 px a 20px, igual con el de arriba */
 }
 
-/* primer commit desde ahora*/
+/* CSS Box Model*/
