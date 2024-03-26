@@ -4,6 +4,7 @@
   --primario: #ffc107;
   --secundario: #0097a7;
   --gris: #757575;
+  --grisClaro: #DFE9F3;
 
   --fuente-principal: 3.8rem;
 }
@@ -22,6 +23,7 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Krub", sans-serif;
+  background-image: linear-gradient(to top, var(--grisClaro), var(--blanco) 100%);
 }
 
 .contenedor {
@@ -134,4 +136,4 @@ h1,h2,h3 {
 }
 
 
-/* Comentar el codigo CSS */
+/* Degradados con CSS */
