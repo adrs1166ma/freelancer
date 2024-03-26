@@ -8,46 +8,22 @@
   --fuente-principal: 3.8rem;
 }
 
+/** G L O B A L E S **/
 html {
   font-size: 62.5%;
-  box-sizing: border-box; /* snippet para facilitar el modelo caja en CSS */
+  box-sizing: border-box; /* HACK PARA BOX MODEL - snippet para facilitar el modelo caja en CSS */
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-} /* snippet para facilitar el modelo caja en CSS */
+} /* HACK PARA BOX MODEL - snippet para facilitar el modelo caja en CSS */
 
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Krub", sans-serif;
 }
 
-.titulo {
-  text-align: center;
-  font-size: 3.8rem;
-}
-
-h1 {
-  font-size: 3.8rem;
-}
-h2 {
-  font-size: 2.8rem;
-}
-h3 {
-  font-size: 1.8rem;
-}
-
-h1,h2,h3 {
-  text-align: center;
-}
-
-.titulo span {
-  font-size: 2rem;
-}
-.nav-bg {
-  background-color: var(--secundario);
-}
 .contenedor {
   max-width: 120rem;
 
@@ -72,6 +48,32 @@ h1,h2,h3 {
       width: auto; 
     }
 }
+
+/** T I P O G R A F I A **/
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+  text-align: center;
+}
+
+/** T I T U L O S **/
+.titulo span {
+  font-size: 2rem;
+}
+
+/** N A V E G A C I O N - P R I N C I P A L **/
+.nav-bg {
+  background-color: var(--secundario);
+}
+
 
 .navegacion-principal {
   display: flex;
@@ -100,6 +102,7 @@ h1,h2,h3 {
   color: var(--oscuro);
 }
 
+/** H E R O **/
 .hero {
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
@@ -125,10 +128,10 @@ h1,h2,h3 {
   color: var(--blanco);
 }
 
-.ubicacion {
+.contenido-hero .ubicacion {
   display: flex;
   align-items: flex-end;
 }
 
 
-/* CSS para crear botones*/
+/* Comentar el codigo CSS */
