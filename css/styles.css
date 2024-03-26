@@ -4,7 +4,7 @@
   --primario: #ffc107;
   --secundario: #0097a7;
   --gris: #757575;
-  --grisClaro: #DFE9F3;
+  --grisClaro: #dfe9f3;
 
   --fuente-principal: 3.8rem;
 }
@@ -23,7 +23,11 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Krub", sans-serif;
-  background-image: linear-gradient(to top, var(--grisClaro), var(--blanco) 100%);
+  background-image: linear-gradient(
+    to top,
+    var(--grisClaro),
+    var(--blanco) 100%
+  );
 }
 
 .contenedor {
@@ -31,7 +35,7 @@ body {
 
   margin: 0 auto;
 }
-.boton{
+.boton {
   background-color: var(--secundario);
   color: var(--blanco);
   padding: 1rem 3rem;
@@ -40,15 +44,26 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 90%;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-    .boton{
-      width: auto; 
-    }
+  .boton {
+    width: auto;
+  }
+}
+
+.sombra {
+  /* soporte antiguo 
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+  */
+  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 /** T I P O G R A F I A **/
@@ -62,7 +77,9 @@ h3 {
   font-size: 1.8rem;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -75,7 +92,6 @@ h1,h2,h3 {
 .nav-bg {
   background-color: var(--secundario);
 }
-
 
 .navegacion-principal {
   display: flex;
@@ -112,6 +128,8 @@ h1,h2,h3 {
   height: 450px;
 
   position: relative; /*padre*/
+
+  margin-bottom: 2rem;
 }
 .contenido-hero {
   position: absolute; /*hijo*/
@@ -135,5 +153,4 @@ h1,h2,h3 {
   align-items: flex-end;
 }
 
-
-/* Degradados con CSS */
+/* Sombras con CSS */
