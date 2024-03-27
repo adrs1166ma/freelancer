@@ -47,12 +47,16 @@ body {
   border-radius: 0.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
 
 @media (min-width: 768px) {
   .boton {
     width: auto;
   }
+}
+.boton:hover {
+  cursor: pointer;
 }
 
 .sombra {
@@ -86,6 +90,22 @@ h3 {
 /** T I T U L O S **/
 .titulo span {
   font-size: 2rem;
+}
+
+/** U T I L I D A D E S **/
+.w-sm-100 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+      width: auto;
+    }
+}
+.flex {
+  display: flex;
+}
+.alinear-derecha {
+  justify-content: flex-end;
 }
 
 /** N A V E G A C I O N - P R I N C I P A L **/
@@ -211,4 +231,25 @@ h3 {
   margin-bottom: 2rem;
   color: var(--primario);
 }
-/* Primeros pasos con el formulario */
+
+.contenedor-campos {
+
+}
+.campo {
+  margin-bottom: 1rem;
+
+}
+.campo label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+}
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+/* CSS a los inputs */
