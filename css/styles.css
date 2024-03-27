@@ -168,5 +168,28 @@ h3 {
   }
 }
 
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-/* Cuando Usar */
+}
+.servicio h3 {
+  color: var(--secundario);
+  font-weight: normal;
+}
+.servicio p {
+  line-height: 2;
+  text-align: center;
+}
+.servicio .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;/*centrar iconos*/
+  align-items: center;
+}
+
+/* Finalizando la seccion de Servicios */
