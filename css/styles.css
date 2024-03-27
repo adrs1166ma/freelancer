@@ -13,7 +13,16 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; /* HACK PARA BOX MODEL - snippet para facilitar el modelo caja en CSS */
+  scroll-snap-type: y mandatory;
 }
+/*** Scroll Snap ***/
+.servicios,
+.navegacion-principal,
+.formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
 *,
 *:before,
 *:after {
@@ -173,6 +182,7 @@ h3 {
   align-items: flex-end;
 }
 
+
 /** Servicios **/
 @media (min-width: 768px) {
   .servicios {
@@ -271,4 +281,4 @@ h3 {
   text-align: center;
 }
 
-/* Posicionando a los Inputs */
+/* Añadiendo un Efecto de Scroll */
