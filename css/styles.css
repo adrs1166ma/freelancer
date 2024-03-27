@@ -153,4 +153,19 @@ h3 {
   align-items: flex-end;
 }
 
-/* Sombras con CSS */
+/** Servicios **/
+@media (min-width: 768px) {
+  .servicios {
+  
+    display: grid;
+    /** 
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 800px;
+    **/
+    /* grid: 200px 800px / 300px 300px -------------- simplificado*/
+    grid-template-columns: repeat(3, 1fr);/*1fr 1fr 1fr;*//*33.3% 33.3% 33.3%;*/
+  }
+}
+
+
+/* Introduccion a CSS Grid */
