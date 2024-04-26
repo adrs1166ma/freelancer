@@ -1,62 +1,123 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Sora", sans-serif;
+.p {
+    color: aliceblue;
 }
-
 body {
-    background-color: #FAFAF9;
+    background-color: #000000;
+    margin: 0;
+}
+h1 {
+    color: white;
+}
+/* Estilos para el contenedor de la barra principal */
+
+.contenedor-barra-principal {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #6C727F;
-}
-
-.tarjeta {
-    width: 400px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* Estilos para la barra principal */
+  .barra-principal {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
-}
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  /* Estilos para la lista de la barra principal */
+  .barra-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para los elementos de la lista de la barra principal */
+  .barra-principal li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  /* Estilos para los enlaces de la barra principal */
+  .barra-principal a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Estilos para la barra secundaria */
+  .barra-secundaria {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5%; /* Mueve la barra un 5% del ancho de la pantalla a la derecha */
+    top: 20px;
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  /* Estilos para la imagen de la barra secundaria */
+  .barra-secundaria img {
+    width: 100px;
+    height: 100px;
+  }
 
-.tarjeta__imagen {
-    background-image: url(../img/cactus_img.jpg);
+/* ----------------------------------------------------- */
+
+
+  /* Contenedor principal */
+  .contenedor-principal {
+    display: flex; /* Habilitar flexbox para la distribución horizontal */
+    align-items: stretch; /* Extender los elementos verticalmente */
+    min-height: 90vh; /* Altura mínima del contenedor principal */
+  }
+  
+  /* Barras laterales */
+  .barra-lateral-izquierda,
+  .barra-lateral-derecha {
+    flex: 0 0 10%; /* Ancho de las barras laterales */
+    background-color: #f0f0f0; /* Color de fondo de las barras laterales */
+    padding: 20px; /* Acolchado interno de las barras laterales */
+    border-radius: 10px;
+  }
+  
+  /* Contenedor central */
+  .cuerpo-grande {
+    flex: 1; /* Ancho del contenedor central */
+    background-color: red;
+    border-radius: 10px;
+   
+  }
+  
+  /* Separación entre elementos */
+  .contenedor-principal > * { /* Seleccionar todos los elementos hijos directos del contenedor principal */
+    margin: 20px; /* Margen entre las barras laterales y el contenedor central */
+  }
+
+/* ----------------------------------------------------------- */
+
+.cuerpo-principal {
+    width: 100%;
+    height: 80%;
+    background-image: url(/img/bganime.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 150px;
     border-radius: 10px;
 }
 
-span {
-    background-color: #E6D6FC;
-    color: #883AE1;
-    font-weight: 700;
-    padding: 5px 20px;
-    width: auto;
-    font-size: 10px;
-    align-self: self-start;
-    border-radius: 20px;
-}
-
-h1 {
-    font-size: 18px;
-    color: #20293A;
-}
-
-p {
-    font-weight: 300;
-    font-size: 14px;
-}
-
-.tarjeta__autor {
-    border-top: 1px solid #E5EAF0;
-    font-size: 12px;
-    padding-top: 15px;
-}
+.seccion-botones {
+    display: flex; /* Habilitar flexbox para la distribución horizontal */
+    justify-content: flex-start; /* Alinear los botones a la izquierda */
+    /*align-items: center; /* Alinear verticalmente los elementos */
+    margin-bottom: 10px; /* Margen inferior para separar de la descripción */
+  }
+  
+  .seccion-botones button {
+    padding: 10px 20px; /* Tamaño del relleno de los botones */
+    background-color: transparent; /* Color de fondo de los botones */
+    color: #fff; /* Color de texto de los botones */
+    border: 2px; /* Eliminar borde predeterminado de los botones */
+    border-color: white;
+    cursor: pointer; /* Indicar que el elemento es interactivo */
+    margin-right: 10px; /* Margen derecho para crear espacio entre botones */
+  }
