@@ -21,7 +21,7 @@ h1 {
   .barra-principal {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #f0f0f0;
     border-radius: 10px;
   }
@@ -36,7 +36,7 @@ h1 {
   /* Estilos para los elementos de la lista de la barra principal */
   .barra-principal li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 50px;
   }
   
   /* Estilos para los enlaces de la barra principal */
@@ -50,7 +50,7 @@ h1 {
     display: flex;
     align-items: center;
     position: absolute;
-    right: 5%; /* Mueve la barra un 5% del ancho de la pantalla a la derecha */
+    right: 10%; /* Mueve la barra un 5% del ancho de la pantalla a la derecha */
     top: 20px;
     padding: 10px;
     background-color: #eee;
@@ -121,3 +121,4 @@ h1 {
     cursor: pointer; /* Indicar que el elemento es interactivo */
     margin-right: 10px; /* Margen derecho para crear espacio entre botones */
   }
+
