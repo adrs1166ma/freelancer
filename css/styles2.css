@@ -57,7 +57,9 @@ h1 {
     background-image: url(../img/nerodibujo.jpg);
     background-size: cover;
     background-position: center;
+    border: black 20px solid;
     border-radius: 50px;
+    z-index: 10;
   }
   
 
@@ -97,11 +99,15 @@ h1 {
 
 .cuerpo {
     width: 100%;
-    height: 80%;
-    background-image: url(/img/bganime.jpg);
-    background-size: cover;
-    background-position: center;
+    max-height: 80%;
     border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    
+}
+video {
+  width: 100%;
+  
 }
 
 /* ----------------------------------------------------------- */
@@ -148,7 +154,7 @@ h1 {
 .video {
   width: 180px;
   height: 220px;
-  
+  border: black 20px solid;
   border-radius: 50px;
   position: absolute;
   background-image: url(../img/elffa1.jpg);
