@@ -52,3 +52,20 @@ p {
         <p>From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.</p>
         <div class="tarjeta__autor">Annie Spratt</div>
 </div>
+.seccion-botones {
+    display: flex; /* Habilitar flexbox para la distribución horizontal */
+    justify-content: flex-start; /* Alinear los botones a la izquierda */
+    /*align-items: center; /* Alinear verticalmente los elementos */
+    margin-bottom: 10px; /* Margen inferior para separar de la descripción */
+}
+.seccion-botones button {
+    padding: 10px 20px; /* Tamaño del relleno de los botones */
+    background-color: transparent; /* Color de fondo de los botones */
+    color: #fff; /* Color de texto de los botones */
+    border: 2px; /* Eliminar borde predeterminado de los botones */
+    border-color: white;
+    cursor: pointer; /* Indicar que el elemento es interactivo */
+    margin-right: 10px; /* Margen derecho para crear espacio entre botones */
+}
+
+
