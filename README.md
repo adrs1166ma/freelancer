@@ -3,7 +3,7 @@
 
 
 
-## CLASS 44. Sombras con CSS
+##44. Sombras con CSS
 
 ### **Sitios usados:**
 
@@ -14,7 +14,7 @@
 >https://caniuse.com/
 
 
-## CLASS 46. Cuando usar
+##46. Cuando usar
 
 Utiliza Flexbox
 Para la alineacion o distribucion de los elementos que estaran dentro de contenedores
